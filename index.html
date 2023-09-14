@@ -7,17 +7,390 @@
     <link rel = "icon" href="weblogoo.png" type = "image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Suraz Bissoyi Responsive</title>
+    <title>Suraz Bissoyi</title>
+
+  <style>
+        *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: black;
+  color: white;
+}
+
+
+::selection {
+  color: white;
+  background: red;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  gap: 2px;
+}
+
+.grid > div {
+  border: solid px white;
+  text-align: center;
+  padding: 1px 0;
+  font-size: 30px;
+}
+
+.item1 {grid-column: 1/4;}
+.item2 {grid-column: 1/3;}
+.item4 {grid-column: 1/2;}
+.item5 {grid-column: 2/4;}
+.item6 {grid-column: 1/4;}
+.item11 {grid-column: 2/4;}
+.item12 {grid-column: 1/4;}
+
+@media only screen and (max-width: 600px) {
+  .item1 {grid-column: 1/4;}
+  .item2 {grid-column: 1/4;}
+  .item3 {display: none;}
+  .item4 {grid-column: 1/4;}
+  .item5 {grid-column: 1/4;}
+  .item6 {grid-column: 1/4;}
+  .item7 {grid-column: 1/4;}
+  .item8 {grid-column: 1/4;}
+  .item9 {grid-column: 1/4;}
+  .item10 {grid-column: 1/4;}
+  .item11 {grid-column: 1/4;}
+  .item12 {grid-column: 1/4;}
+
+  div.item1 {
+  height: 50px;
+  }
+
+  div.item1 #suraz{
+    margin: 2px 10px;
+  }
+  div.item1 a{
+    margin: 2px auto;
+    padding: 5px;
+    font-size: 13px;
+    height: 50px;
+  }
+
+  div.item2 {
+    height: 200px;
+  }
+  div.item2 p{
+    margin-left: 48px;
+    margin-top: 80px;
+    font-size: 13px;
+  }
+
+  div.item2 h1{
+    margin-left: 48px;
+    font-size: 25px;
+  }
+
+  div.item4 {
+    height: 400px;
+  }
+
+  div.item4 img {
+    margin-top: 30px;
+  }
+
+  div.item5 h1{
+    margin-top: 0px;
+    text-align: center;
+    padding: 0px;
+  }
+   
+  div.item5 p {
+    margin: 0 10px;
+    text-align: center;
+  }
+
+  div.item5 #skill {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    border-bottom: 0px;
+  }
+
+  div.item6 h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  div.item7 div, div.item8 div, div.item9 div{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+  }
+
+  div.item7 .material-icons, div.item8 .material-icons, div.item9 .material-icons {
+    text-align: left;
+    padding-left: 25px;
+  }
+
+  div.item7 div .learnmore, div.item8 div .learnmore, div.item9 div .learnmore {
+    margin-left: -145px;
+  }
+
+  div.item10 {
+    height: 250px;
+  }
+
+  div.item10 {
+    width: 100%; 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+
+  .item10 p{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+}
+
+  div.item11 form{
+    margin-left: 15px;
+    margin-right: auto;
+  }
+
+  div.item11 [type=text]{
+    width: 90%;
+  }
+  div.item11 [type=textarea]{
+    width: 90%;
+  }
+  div.item11 [type=submit]{
+    width: 25%;
+    margin-left: 34%;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  div.item12 {
+  margin-bottom: 20px;
+  }
+
+  div.item10 a{
+    margin-left: 0px;
+  }
+}
+
+#suraz {
+  margin-left: 10px;
+}
+#s {
+  color: black;
+}
+.item1 {
+  background-color: red;
+  height: 55px;
+}
+.item1 li {
+  text-align: center;
+  float: right;
+  background-color: red;
+  list-style-type: none;
+}
+
+.item1 a{
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+
+  padding: 15px;
+  font-size: 14px;
+}
+
+.item1 a:hover {
+  color: black;
+}
+
+.item2 {
+  height: 600px;
+}
+.item2 h1{
+  margin-left: 15%;
+  padding-left: 5px;
+  text-align: left;
+  border-left: solid 7px red;
+  font-size: 4vw;
+}
+
+.item2 p{
+  margin-top: 40%;
+  margin-left: 15%;
+  padding-left: 5px;
+  text-align: left;
+  border-left: solid 7px red;
+}
+
+.item4 img {
+  margin: 5%;
+  margin-top: 40%;
+  max-width: 75%;
+  border-radius: 5px;
+  border: 4px solid gray;
+}
+
+.item5 h1{
+  padding-left: 40px;
+  margin-top: 200px;
+  font-size: 40px;
+  text-align: left;
+}
+
+.item5 p{
+  margin-left: 30px;
+  margin-right: 60px;
+  font-size: 15px;
+  text-align: left;
+  padding: 10px;
+}
+
+.item5 #skill {
+  padding: 2px;
+  margin-left: 40px;
+  width: 80px;
+  border-bottom: 3px solid rgba(255, 0, 0, 0.539);
+}
+
+.item5 .skl {
+  color: rgba(255, 0, 0, 0.66);
+}
+
+.item6 h1{
+  margin-left: 50px;
+  text-align: left;
+  font-size: 40px;
+}
+
+
+
+.item7 div, .item8 div, .item9 div {
+  background-color: rgb(22, 21, 21);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10%;
+}
+
+
+
+.item7 div:hover, .item8 div:hover, .item9 div:hover {
+  background-color: rgba(255, 0, 0, 0.635);
+}
+
+.item7 p, .item8 p, .item9 p{
+  text-align: left;
+  font-size: 15px;
+  padding-left: 20px;
+}
+
+.item7 h3, .item8 h3, .item9 h3 {
+  font-size: 20px;
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.item7 i, .item8 i, .item9 i {
+
+
+}
+
+.item7 div a, .item8 div a, .item9 div a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  border-bottom: 3px solid red;
+}
+
+
+.item10 {
+  display: inline-block;
+}
+.item10 h1{
+  margin: 20px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.item10 p{
+  margin: 0 auto;
+  text-align: center;
+  font-size: 15px;
+  margin: 20px;
+}
+
+.material-icons {
+  margin-left: -78%;
+}
+
+.learnmore {
+  margin-left: -65%;
+}
+
+.item10 a {
+  text-decoration: none;
+  background-color: red;
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+}
+
+.item11 form{
+  text-align: left;
+  margin-left: 40px;
+}
+
+.item11 [type=text], [type=textarea]{
+  background-color: rgb(46, 44, 44);
+  color: white;
+  width: 60%;
+  margin: 10px;
+  border: 1px solid #3f3d3d;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 30px;
+}
+
+.item11 [type=submit] {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 80px;
+  height: 40px;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.item12 p {
+  font-size: 14px;
+}
+    </style>
+
 </head>
 <body>
     <div class="grid">
         <div class="item1">
             <ul>       
-                <li style="float: left;" id="suraz"> <strong> <span id="s"> S</span>uraz. </strong></li>             
+                <li style="float: left;" id="suraz" href="bit.ly/surazbissoyi"> <strong> <span id="s"> S</span>uraz. </strong></li>             
                 <li><a href="#contact">Contact</a></li>  
                 <li><a href="#services">Services</a></li>   
                 <li><a href="#about">About</a></li>    
-                <li><a href="index.html">Home</a></li>   
+                <li><a href="index.html">Home</a></li> 
             </ul>
         </div>
 
@@ -32,11 +405,11 @@
             <img src="pic1.jpg" >
         </div>
 
-        <div class="item5" id="about">
-            <h1 class="about"> About Me</h1>
-            <p class="about1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolores et dicta iste dolore debitis maxime incidunt impedit deserunt quod nisi pariatur aperiam obcaecati totam voluptates earum, cumque, voluptatem doloremque? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis error nesciunt maxime modi voluptas inventore, at deleniti, harum totam nulla placeat illo, quo minus laudantium.</p>
+        <div class="item5">
+            <h1 class="about" id="about"> About Me</h1>
+            <p class="about1">I'm Suraz Bissoyi, a BCA student at Vikram Dev University, passionately exploring a diverse range of tech stacks, with a strong focus on Java and Data Structures and Algorithms (DSA). I'm dedicated to honing my skills and knowledge in these domains to embark on a successful journey in the world of technology.</p>
 
-            <p id="skill">Skills</p>
+            <p id="skill">SKILL</p>
             
             <p class="skl"> Web Development</p>
             <p>Frontend Web Development</p>
@@ -55,7 +428,7 @@
         <div>
             <i class="material-icons" style="font-size:48px;color:white">code</i>
             <h3>Web Development</h3>
-            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni provident obcaecati perferendis molestias praesentium similique rem? Deleniti fuga, magnam, ipsam.</p>
+            <p class="text">Web development involves creating dynamic and interactive websites, combining HTML, CSS, and JavaScript to deliver engaging user experiences on the internet.</p>
             <h6 class="learnmore"><a href="#">Learn more</a></h6> 
         </div>
         </div>
@@ -63,7 +436,7 @@
         <div>
             <i class="material-icons" style="font-size:48px;color:white">view_quilt</i>
             <h3>Frontend Development</h3>
-            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni provident obcaecati perferendis molestias praesentium similique rem? Deleniti fuga, magnam, ipsam.</p>
+            <p class="text">Frontend development focuses on designing and building the user interface of websites or applications, ensuring a seamless and visually appealing user experience.</p>
             <h6 class="learnmore"><a href="#">Learn more</a></h6>
         </div>
         </div>
@@ -71,17 +444,15 @@
         <div>
             <i class="material-icons" style="font-size:48px;color:white">apps</i>
             <h3>App Development</h3>
-            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni provident obcaecati perferendis molestias praesentium similique rem? Deleniti fuga, magnam, ipsam.</p>
+            <p class="text">App development encompasses the creation of mobile or desktop applications, using various programming languages and frameworks to deliver functional and user-friendly software.</p>
             <h6 class="learnmore"><a href="#">Learn more</a></h6>
         </div>
         </div>  
         <div class="item10" id="contact">
             <h1>Contact Me</h1>
-            
-            <p id="email">surazbissoyi@gmail.com</p>
-            
-            <p id="num">+91 7608057678</p>
-            <a href="https://drive.google.com/file/d/1n4CdlbjdDYJvZVYxcF_EozihrVKEGfQg/view?usp=share_link" class="download">Download CV</a>
+            <p>surazbissoyi@gmail.com</p>
+            <p>+91 7608057678</p>
+            <a href="#" class="download">Download CV</a>
         </div>
 
         
